@@ -31,3 +31,6 @@ print elements
 # now we can print them out too
 for i in elements:
     print "Element was: %s" % i
+
+study_drill = range(0,6)
+print study_drill
