@@ -117,22 +117,22 @@ class TestListOperations(unittest.TestCase):
 
     ### Tests for Part 2 ###
 
-    def test_2_A_custom_len(self):
-        self.assertEqual(custom_len(self.months), 12)
-        self.assertEqual(custom_len(self.notes), 8)
-        self.assertEqual(custom_len(self.multiples), 10)
+    # def test_2_A_custom_len(self):
+    #     self.assertEqual(custom_len(self.months), 12)
+    #     self.assertEqual(custom_len(self.notes), 8)
+    #     self.assertEqual(custom_len(self.multiples), 10)
 
     # def test_2_B_custom_append(self):
     #     custom_append(self.months, 'Hex')
     #     custom_append(self.notes, 'Re')
     #     custom_append(self.multiples, 30)
 
-    #     self.assertEqual(self.months, ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun',
-    #                                    'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec',
-    #                                    'Hex'])
-    #     self.assertEqual(self.notes, ['Do', 'Re', 'Mi', 'Fa', 'So', 'La', 'Ti',
-    #                                   'Do', 'Re'])
-    #     self.assertEqual(self.multiples, [0, 3, 6, 9, 12, 15, 18, 21, 24, 27, 30])
+        # self.assertEqual(self.months, ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun',
+        #                                'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec',
+        #                                'Hex'])
+        # self.assertEqual(self.notes, ['Do', 'Re', 'Mi', 'Fa', 'So', 'La', 'Ti',
+        #                               'Do', 'Re'])
+        # self.assertEqual(self.multiples, [0, 3, 6, 9, 12, 15, 18, 21, 24, 27, 30])
 
     # def test_2_C_custom_extend(self):
     #     custom_extend(self.months, ['Bin', 'Tri', 'Hex'])
@@ -184,10 +184,10 @@ class TestListOperations(unittest.TestCase):
     #     self.assertEqual(custom_index(self.notes, 'Do'), 0)
     #     self.assertEqual(custom_index(self.multiples, 27), 9)
 
-    # def test_2_H_custom_count(self):
-    #     self.assertEqual(custom_count(self.months, 'Jul'), 1)
-    #     self.assertEqual(custom_count(self.notes, 'Do'), 2)
-    #     self.assertEqual(custom_count(self.multiples, 27), 1)
+    def test_2_H_custom_count(self):
+        self.assertEqual(custom_count(self.months, 'Jul'), 1)
+        self.assertEqual(custom_count(self.notes, 'Do'), 2)
+        self.assertEqual(custom_count(self.multiples, 27), 1)
 
     # def test_2_I_custom_reverse(self):
     #     custom_reverse(self.months)
