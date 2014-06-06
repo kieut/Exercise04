@@ -109,7 +109,15 @@ the test_list_operations.py file for concrete examples of expected behavior.
 
 def custom_len(input_list):
     """custom_len(input_list) imitates len(input_list)"""
-    pass
+    count = 0
+    for item in input_list:
+        count = item + 1
+        return count
+    print count
+
+
+
+
 
 # For the next four functions, get clever using slice operations described in the first half
 def custom_append(input_list, value):
